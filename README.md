@@ -3,6 +3,12 @@
 This branchd demonstrates how to deploy a Managed VMs app from 
 Travis CI.
 
+## Running Locally
+
+First vendor the dependencies:
+
+`pip install -r requirements.txt -t lib/`
+
 ## Contributing changes
 
 * See [CONTRIBUTING.md](CONTRIBUTING.md)
