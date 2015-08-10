@@ -17,6 +17,7 @@ before_install:
 - ssh-keygen -q -N "" -f ~/.ssh/google_compute_engine
 - gcloud auth activate-service-account --key-file cont-deployment.json
 install:
+- gcloud config set compute/zone us-central1-b
 - gcloud config set project continuous-deployment-python
 - gcloud -q components update gae-python
 - pip install -r requirements.txt -t lib/
