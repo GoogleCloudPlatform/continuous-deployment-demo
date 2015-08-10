@@ -17,6 +17,11 @@ from flask import Flask
 app = Flask(__name__)
 
 from api_key import key
+    
+
+@app.route('/_ah/health')
+def health_check():
+    return 'ok', 200
 
 @app.route('/get_author/<title>')
 def get_author(title):
