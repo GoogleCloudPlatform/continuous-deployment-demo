@@ -9,6 +9,10 @@ First vendor the dependencies:
 
 `pip install -r requirements.txt -t lib/`
 
+## Deploying
+
+`gcloud preview app deploy app.yaml --remote --default`
+
 ## Contributing changes
 
 * See [CONTRIBUTING.md](CONTRIBUTING.md)
