@@ -14,11 +14,12 @@ before_install:
   fi
 - tar -xzf credentials.tar.gz
 - mkdir -p lib
+- ssh-keygen -q -N "" -f ~/.ssh/google_compute_engine
 - gcloud auth activate-service-account --key-file cont-deployment.json
 install:
 - gcloud config set project continuous-deployment-python
 - gcloud -q components update gae-python
 - pip install -r requirements.txt -t lib/
 script:
-- gcloud -q preview app deploy app.yaml --set-default
+- gcloud -q preview app deploy app.yaml --set-default --remote
 - python e2e_test.py
