@@ -6,8 +6,6 @@
 # on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 # or implied. See the License for the specific language governing permissions and
 # limitations under the License.
-
-
 import urllib2
 import json
 
@@ -15,7 +13,6 @@ from flask import Flask
 app = Flask(__name__)
 
 from api_key import key
-    
 
 @app.route('/_ah/health')
 def health_check():
@@ -23,7 +20,8 @@ def health_check():
 
 @app.route('/get_author/<title>')
 def get_author(title):
-    host = 'https://www.googleapis.com/books/v1/volume?q={}&key={}&country=US'.format(title, key)
+    host = 'https://www.googleapis.com/books/v1/volumes?q={}&key={}&country=US'.format(title, key)
+    print "host %s" % host
     request = urllib2.Request(host)
     try:
         response = urllib2.urlopen(request)
@@ -36,4 +34,4 @@ def get_author(title):
     return author
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(host='0.0.0.0', port=8080)
