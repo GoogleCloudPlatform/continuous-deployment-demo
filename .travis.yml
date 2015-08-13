@@ -22,5 +22,5 @@ install:
 - gcloud -q components update gae-python
 - pip install -r requirements.txt -t lib/
 script:
-- gcloud -q preview app deploy app.yaml --set-default --remote
+- gcloud -q preview app deploy app.yaml --set-default 
 - python e2e_test.py
