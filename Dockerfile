@@ -11,9 +11,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-FROM google/python
+FROM debian:jessie
 
-RUN apt-get update && apt-get install -y --no-install-recommends openssl ca-certificates
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+
+RUN apt-get update -y && \
+    apt-get install --no-install-recommends -y -q \
+        build-essential python python-dev python-pip \
+        git libffi-dev ca-certificates openssl libssl-dev && \
+    apt-get clean && \
+    rm /var/lib/apt/lists/*_*
+
+RUN pip install -U pip && pip install virtualenv
 
 WORKDIR /app
 RUN virtualenv /env
