@@ -9,8 +9,7 @@ before_install:
 install:
 - pip install -r requirements.txt -t lib/
 script:
-- gcloud -q preview app deploy app.yaml --set-default 
-- python e2e_test.py
+- echo "No script to run"
 deploy:
     skip_cleanup: true
     provider: gae
