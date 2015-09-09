@@ -25,4 +25,6 @@ script:
 deploy:
     provider: gae
     keyfile: client-secret.json
+    project: continuous-deployment-python
+    
 
