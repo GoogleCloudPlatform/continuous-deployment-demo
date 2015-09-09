@@ -7,8 +7,6 @@ before_install:
 # If the SDK is not already cached, download it and unpack it
 - tar -xzf credentials.tar.gz
 - mkdir -p lib
-# Here we use the decrypted service account credentials to authenticate the command line tool
-- gcloud auth activate-service-account --key-file client-secret.json
 install:
 # Install the Python dependencies
 - pip install -r requirements.txt -t lib/
