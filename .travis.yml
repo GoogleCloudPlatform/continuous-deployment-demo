@@ -11,7 +11,7 @@ install:
 # Install the Python dependencies
 - pip install -r requirements.txt -t lib/
 script:
-- echo "No script to run"
+- python test_main.py
 # [START travis_deploy]
 deploy:
     provider: gae
