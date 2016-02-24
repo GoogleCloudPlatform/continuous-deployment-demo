@@ -14,6 +14,11 @@ app = Flask(__name__)
 
 from api_key import key
 
+@app.route('/')
+def index():
+    return 'Hello world'
+        
+
 @app.route('/_ah/health')
 def health_check():
     return 'ok', 200
