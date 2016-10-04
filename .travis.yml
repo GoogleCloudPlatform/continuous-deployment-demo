@@ -27,7 +27,7 @@ before_install:
 # [END auth]
 install:
 # Set the correct project to deploy to
-- gcloud config set project continuous-deployment-python
+- gcloud config set project krishnaTest 
 - gcloud -q components update gae-python
 # Install the Python dependencies
 - pip install -r requirements.txt -t lib/
