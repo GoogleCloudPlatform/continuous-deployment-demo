@@ -1,6 +1,7 @@
 # Use Dockerized infrastructure
 sudo: false
-language: python
+#language: python
+ language: python: 2.7
 # Cache our Gcloud SDK between commands
 cache:
   directories:
