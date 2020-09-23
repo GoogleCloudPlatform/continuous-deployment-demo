@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kappla",
+  "private_key_id": "3d906c6a51b82f4c52f1063f809c46d0e7393bda",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCc6IAEdojySq3h\nAsnzjClneroIj3AscSSfCmd1j0ivNSjOYwY66d6T+GLztXYNqoohd9AebTyXUHlp\nXlpGn6/u2SnFiTJD7O7FLbNUe6FF7Qf0moEuvyg1uiglOVgIzgOiizKm2P6dKRG3\niE3SnEMp6f0Ag2diKNUEf6qui+UnjB7SALVYCHZ9yAMhCZXsWO56HpjGXQBol/Wj\nVXo0AV+XcEs43GqNr1TH/OZyNAdApbObxbA24FPpnLi+42ucOgQJ/axL1J+qbkKK\nv8nhy6DUgtju5gFNRTClqcAiesYbGScFZmffXwUDn/MQJWXckXHoh4hE66ONmGv+\nu2oIvQbbAgMBAAECggEAMOhJatq1oewEGaQgZZD1IOOAlAV9neSgWRBJojuImNAV\niYsVGIzoCzA7S6JuiyDykC8DyFAdOD7lsSGvOt8wW98FpaQ3bjOuUviFMpqccKrK\ntYPpKzR7KI//Tmb62Te5q1L+9UGiz0LLWm0acMCzMJ/V8/CBa3e1ugK/JUvGoBYP\nubD5XSYj+INX4l5vCotdLG0LQxNQT7gQcr9SUX7WZ/Ar8v9KTWu+Syt2ZjHgVeOa\njCMtDByG433D1oppFAg/hEFIcU8IEMRSiMh5hBNgV5DrWLNMtisppV+52tN7gdZ1\n0dGpea37Gf/D6S2ucoF9ka5jdzaGTIpbyPVa6rw8CQKBgQDdzKZ2M7TojuK4VISJ\n0OVcOwfosc3MTS+ZKI8aGpGpqye/Snr2Ml7ptNMlJie6jXp42U3zZz5lPaX0/bi4\nojfscx36ucuOpUgj+ozCMKp6q7W4Rr9+F0Js1hhuN9OxE/9sM4mRTGgTQdGidEZL\n560kTP55o4gVjWnZMLnOErbi+QKBgQC1GlKR7XXvT+jAmSWEGkSyyeqynDzMyrPL\n2UOFNy3uRS3V9mxdwjVldI2l1LhPFXvxiApHlpXbjCfMerbelTVMPJ0aCX+L+a70\nMnV78g9N6Xkh0IbxLK0KjEWRElTXl1u0AuatsKQo7hPLSvaChBwWxwDrODnFvieJ\n8mEHx7DZcwKBgAqcIo5e9NV3GFNW/6wUCRS7Yip4bu7J9m/uJ8JI6RTjshgNeQpT\n6IRneP468AWVhPlI89ij5LE1HL42cOKsJ96wtwtqXdlqAKRv9NHJQC50DlJNWBWx\nCSVprGuBUigTW9GSOY9wxz28lUmfJEm3QGoPINEyyGy3ggu4r/qynHsJAoGAfcWc\nFnA9eUebszYokcfUcf48mnJa3zbfCvEGLVwW7+TnYjLTK4IWpzD8tnA21+VpwGHk\nEbeIt4JsmVuX6Jji/OETkeOKyuFKGZl5cey3qDo+v7ccIB4QxsSIA6ohdeBN9YQW\nRAXq2+oLoSGcdSPehgsKnlDb/nKC7xB/RnHuZfUCgYAr7K5HqH2TF8S0mFZz6WSX\nAD+yDkxD6ji6ecQx8+leva0ApsYv9yFYE73mnJpDK++Nk2nuV9cYWTXOhf9O/9B+\nE7DBz811FqGV1HPCadWqLF/B59bV5ndHp9V5yckmuflq0YZyxwirWHtsUkM9OWWP\n0FVISjtwWtW5yaONRRBCGw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "continuous-integration-test@kappla.iam.gserviceaccount.com",
+  "client_id": "105850148067465412583",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/continuous-integration-test%40kappla.iam.gserviceaccount.com"
+}
