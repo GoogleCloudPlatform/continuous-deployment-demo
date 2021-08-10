@@ -7,19 +7,15 @@ cache:
   - "$HOME/google-cloud-sdk/"
 env:
 # Make sure gcloud command is on our PATH and the App Engine SDK is in the Python path
-- GAE_PYTHONPATH=${HOME}/.cache/google_appengine PATH=$PATH:${HOME}/google-cloud-sdk/bin PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH} CLOUDSDK_CORE_DISABLE_PROMPTS=1
+- PATH=$PATH:${HOME}/google-cloud-sdk/bin PYTHONPATH=${PYTHONPATH}:./lib CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
-# Install Google App Engine Python SDK
-- if [ ! -d "${GAE_PYTHONPATH}" ]; then
-    python scripts/fetch_gae_sdk.py $(dirname "${GAE_PYTHONPATH}");
-  fi
-# [START auth]
-# Decrypt the credentials we added to the repo using the key we added with the Travis command line tool
-- DECRYPT_COMMAND
 # If the SDK is not already cached, download it and unpack it
 - if [ ! -d ${HOME}/google-cloud-sdk ]; then
      curl https://sdk.cloud.google.com | bash;
   fi
+# [START auth]
+# Decrypt the credentials we added to the repo using the key we added with the Travis command line tool
+- DECRYPT_COMMAND
 - tar -xzf credentials.tar.gz
 - mkdir -p lib
 # Here we use the decrypted service account credentials to authenticate the command line tool

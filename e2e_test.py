@@ -8,15 +8,13 @@
 # limitations under the License.
 
 
-import urllib2
-import logging
+import requests
 
 HOST='http://continuous-deployment-python.appspot.com'
 
 # [START e2e]
-response = urllib2.urlopen("{}/get_author/ulysses".format(HOST))
-html = response.read()
-assert(html == "James Joyce")
+response = requests.get(f"{HOST}/get_author/ulysses")
+assert(response.text == "James Joyce")
 # [END e2e]
 
 

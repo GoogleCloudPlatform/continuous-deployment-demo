@@ -4,4 +4,5 @@
 # in `lib/` subdirectory.
 #
 # Note: The `lib` directory is added to `sys.path` by `appengine_config.py`.
-Flask==0.10
+requests==2.26.0
+flask==2.0.1
